@@ -3,163 +3,667 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-  <title>Run It UP! Dallas — Built By the Community, Powered by Purpose</title>
-  <meta name="description" content="Run It UP! Dallas is Dallas's biggest run club. Download the app to check in, connect with runners, and find your pace.">
+  <title>Run It UP! Dallas — Social Run Club · Four Runs a Week, Every Pace Welcome</title>
+  <meta name="description" content="Run It UP! Dallas is a free social run club. Monday at Trinity Groves, Tuesday in Deep Ellum, Saturday at Fair Oaks Park, Sunday at Levy Event Plaza. Every pace welcome — download the app to check in, build your streak, and find a run buddy.">
   <meta name="theme-color" content="#0A0A0A">
-  <meta property="og:title" content="Run It UP! Dallas">
-  <meta property="og:description" content="Dallas's biggest run club. Download the app.">
-  <meta property="og:image" content="https://runitup-app.netlify.app/assets/og-image.jpg">
+  <link rel="canonical" href="https://taylormadecreative.github.io/runitup-app-site/">
+  <meta property="og:title" content="Run It UP! Dallas — Social Run Club">
+  <meta property="og:description" content="Four runs a week. Every pace welcome. No fees — just community. Download the app and pull up.">
+  <meta property="og:image" content="https://taylormadecreative.github.io/runitup-app-site/assets/og-image.jpg">
+  <meta property="og:url" content="https://taylormadecreative.github.io/runitup-app-site/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Run It UP! Dallas">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="assets/logo.png">
+  <link rel="apple-touch-icon" href="assets/logo.png">
+  <link rel="preload" as="image" href="assets/photos/pack-street.jpg" fetchpriority="high">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "SportsClub",
+        "@id": "https://taylormadecreative.github.io/runitup-app-site/#club",
+        "name": "Run It UP! Dallas",
+        "description": "Free social run club in Dallas, Texas. Four runs a week, every pace welcome.",
+        "url": "https://taylormadecreative.github.io/runitup-app-site/",
+        "email": "contactus@runitupdallas.com",
+        "areaServed": { "@type": "City", "name": "Dallas", "address": { "@type": "PostalAddress", "addressRegion": "TX", "addressCountry": "US" } },
+        "sameAs": [
+          "https://instagram.com/runitupdallas",
+          "https://apps.apple.com/us/app/run-it-up-dallas/id6761876137"
+        ]
+      },
+      {
+        "@type": "Event",
+        "name": "Run It UP! Dallas — Monday Run at Trinity Groves",
+        "organizer": { "@id": "https://taylormadecreative.github.io/runitup-app-site/#club" },
+        "isAccessibleForFree": true,
+        "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+        "eventSchedule": { "@type": "Schedule", "byDay": "https://schema.org/Monday", "startTime": "19:00", "repeatFrequency": "P1W", "scheduleTimezone": "America/Chicago" },
+        "location": { "@type": "Place", "name": "Trinity Groves", "address": { "@type": "PostalAddress", "streetAddress": "3118 Gulden Lane", "addressLocality": "Dallas", "addressRegion": "TX", "addressCountry": "US" } }
+      },
+      {
+        "@type": "Event",
+        "name": "Run It UP! Dallas — Tuesday Run in Deep Ellum",
+        "organizer": { "@id": "https://taylormadecreative.github.io/runitup-app-site/#club" },
+        "isAccessibleForFree": true,
+        "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+        "eventSchedule": { "@type": "Schedule", "byDay": "https://schema.org/Tuesday", "startTime": "19:00", "repeatFrequency": "P1W", "scheduleTimezone": "America/Chicago" },
+        "location": { "@type": "Place", "name": "Deep Ellum", "address": { "@type": "PostalAddress", "streetAddress": "2823 Main St", "addressLocality": "Dallas", "addressRegion": "TX", "addressCountry": "US" } }
+      },
+      {
+        "@type": "Event",
+        "name": "Run It UP! Dallas — Saturday Run at Fair Oaks Park",
+        "organizer": { "@id": "https://taylormadecreative.github.io/runitup-app-site/#club" },
+        "isAccessibleForFree": true,
+        "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+        "eventSchedule": { "@type": "Schedule", "byDay": "https://schema.org/Saturday", "startTime": "08:30", "repeatFrequency": "P1W", "scheduleTimezone": "America/Chicago" },
+        "location": { "@type": "Place", "name": "Fair Oaks Park", "address": { "@type": "PostalAddress", "streetAddress": "7621 Fair Oaks Ave", "addressLocality": "Dallas", "addressRegion": "TX", "addressCountry": "US" } }
+      },
+      {
+        "@type": "Event",
+        "name": "Run It UP! Dallas — Sunday Run at Levy Event Plaza",
+        "organizer": { "@id": "https://taylormadecreative.github.io/runitup-app-site/#club" },
+        "isAccessibleForFree": true,
+        "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+        "eventSchedule": { "@type": "Schedule", "byDay": "https://schema.org/Sunday", "startTime": "08:30", "repeatFrequency": "P1W", "scheduleTimezone": "America/Chicago" },
+        "location": { "@type": "Place", "name": "Levy Event Plaza", "address": { "@type": "PostalAddress", "streetAddress": "501 E Las Colinas Blvd", "addressLocality": "Irving", "addressRegion": "TX", "addressCountry": "US" } }
+      },
+      {
+        "@type": "SoftwareApplication",
+        "name": "Run It Up Dallas!",
+        "operatingSystem": "iOS",
+        "applicationCategory": "HealthApplication",
+        "url": "https://apps.apple.com/us/app/run-it-up-dallas/id6761876137",
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+        "aggregateRating": { "@type": "AggregateRating", "ratingValue": "5.0", "ratingCount": "1" }
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          { "@type": "Question", "name": "Does it cost anything?", "acceptedAnswer": { "@type": "Answer", "text": "No. Run It UP! Dallas is free — no fees, no memberships. Show up, run, hang out." } },
+          { "@type": "Question", "name": "Do I need to be fast?", "acceptedAnswer": { "@type": "Answer", "text": "Not even a little. There are four pace groups from a 16-minute-mile walk to a sub-8 sprint, and every group has a crew." } },
+          { "@type": "Question", "name": "What do I bring to my first run?", "acceptedAnswer": { "@type": "Answer", "text": "Shoes, water, and the app if you want your first run to count toward your streak. Come a few minutes early and say you're new." } },
+          { "@type": "Question", "name": "Do I need the app to run with the club?", "acceptedAnswer": { "@type": "Answer", "text": "No — just pull up. The app is where check-ins, streaks, badges, run buddies, and the crew chat live, and you can explore it as a guest first." } },
+          { "@type": "Question", "name": "Is it Android-friendly?", "acceptedAnswer": { "@type": "Answer", "text": "The app is on iPhone today. Android runners are still crew — the schedule on this page is always current." } }
+        ]
+      }
+    ]
+  }
+  </script>
   <style>
     :root {
-      --bg: #0A0A0A;
+      --ink: #0A0A0A;
+      --asphalt: #151515;
       --surface: #1A1A1A;
-      --primary: #BFFF00;
+      --volt: #BFFF00;
+      --spark: #FF6B2B;
       --text: #FFFFFF;
       --muted: rgba(255,255,255,0.65);
       --muted-2: rgba(255,255,255,0.4);
+      --line: rgba(255,255,255,0.08);
       --display: 'Big Shoulders Display', 'Arial Black', Impact, sans-serif;
       --body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      --pad: clamp(20px, 5vw, 64px);
     }
     * { margin: 0; padding: 0; box-sizing: border-box; }
-    html, body { background: var(--bg); color: var(--text); font-family: var(--body); overflow-x: hidden; -webkit-font-smoothing: antialiased; }
-    .hero { min-height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 48px 24px; text-align: center; position: relative; background: radial-gradient(ellipse at top, rgba(191,255,0,0.08), transparent 50%), #0A0A0A; }
-    .logo-mark { font-family: var(--display); font-weight: 900; font-size: clamp(56px, 12vw, 140px); color: var(--primary); letter-spacing: -0.02em; line-height: 0.9; text-transform: uppercase; text-shadow: 0 0 40px rgba(191,255,0,0.3), 0 0 80px rgba(191,255,0,0.1); }
-    .tagline { font-family: var(--body); font-size: 14px; letter-spacing: 0.25em; text-transform: uppercase; color: var(--muted); margin-top: 20px; }
-    .hero h1 { font-family: var(--display); font-weight: 900; font-size: clamp(32px, 5vw, 56px); color: var(--text); margin-top: 64px; text-transform: uppercase; letter-spacing: -0.01em; line-height: 1.05; max-width: 720px; }
-    .hero-lead { font-size: 18px; color: var(--muted); margin-top: 16px; max-width: 560px; line-height: 1.5; }
-    .hero-badge { display: inline-block; font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--primary); background: rgba(191,255,0,0.1); border: 1px solid rgba(191,255,0,0.3); padding: 6px 14px; border-radius: 999px; margin-top: 32px; font-weight: 600; }
-    .cta-row { display: flex; gap: 12px; flex-wrap: wrap; justify-content: center; margin-top: 40px; }
-    .btn { display: inline-flex; align-items: center; gap: 10px; font-family: var(--display); font-weight: 800; letter-spacing: 0.05em; text-transform: uppercase; padding: 18px 32px; border-radius: 12px; text-decoration: none; font-size: 15px; transition: transform 0.15s ease, box-shadow 0.15s ease; }
+    html { scroll-behavior: smooth; }
+    html, body { background: var(--ink); color: var(--text); font-family: var(--body); overflow-x: hidden; -webkit-font-smoothing: antialiased; }
+    img { max-width: 100%; display: block; }
+    a { color: inherit; }
+    :focus-visible { outline: 2px solid var(--volt); outline-offset: 3px; border-radius: 4px; }
+    section[id] { scroll-margin-top: 84px; }
+
+    .eyebrow { font-size: 12px; font-weight: 600; letter-spacing: 0.28em; text-transform: uppercase; color: var(--volt); }
+    .section { padding: clamp(72px, 10vw, 140px) var(--pad); max-width: 1180px; margin: 0 auto; }
+    .section-title { font-family: var(--display); font-weight: 900; text-transform: uppercase; font-size: clamp(40px, 7vw, 84px); line-height: 0.95; letter-spacing: -0.01em; margin: 14px 0 10px; }
+    .section-sub { color: var(--muted); font-size: clamp(15px, 1.6vw, 18px); line-height: 1.6; max-width: 560px; }
+    .apple-mark { width: 15px; height: 15px; flex: none; }
+
+    /* ===== Header ===== */
+    header {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 50;
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 14px var(--pad);
+      background: linear-gradient(rgba(10,10,10,0.92), rgba(10,10,10,0.75));
+      backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid transparent;
+      transition: border-color 0.3s ease;
+    }
+    header.scrolled { border-bottom-color: var(--line); }
+    .brand { display: flex; align-items: center; gap: 10px; text-decoration: none; }
+    .brand img { width: 38px; height: 38px; border-radius: 50%; }
+    .brand span { font-family: var(--display); font-weight: 900; text-transform: uppercase; font-size: 18px; letter-spacing: 0.02em; }
+    .header-cta { font-family: var(--display); font-weight: 800; text-transform: uppercase; letter-spacing: 0.05em; font-size: 14px; color: var(--ink); background: var(--volt); padding: 10px 18px; border-radius: 10px; text-decoration: none; transition: box-shadow 0.2s ease, transform 0.15s ease; }
+    .header-cta:hover { box-shadow: 0 0 28px rgba(191,255,0,0.45); }
+    .header-cta:active { transform: scale(0.97); }
+
+    /* ===== Invite banner (?ref=) ===== */
+    .invite-banner { display: none; position: fixed; top: 70px; left: 50%; transform: translateX(-50%); z-index: 49; background: rgba(26,26,26,0.97); border: 1px solid rgba(191,255,0,0.35); border-radius: 14px; padding: 14px 44px 14px 18px; font-size: 14px; line-height: 1.45; max-width: min(92vw, 460px); box-shadow: 0 8px 32px rgba(0,0,0,0.5); }
+    .invite-banner strong { color: var(--volt); }
+    .invite-banner.show { display: block; }
+    .invite-close { position: absolute; top: 6px; right: 6px; width: 34px; height: 34px; display: flex; align-items: center; justify-content: center; background: none; border: 0; color: var(--muted); font-size: 20px; cursor: pointer; border-radius: 50%; }
+    .invite-close:hover { color: var(--text); }
+    .invite-banner a { color: var(--volt); font-weight: 600; }
+
+    /* ===== Hero ===== */
+    .hero { position: relative; min-height: 100svh; display: flex; flex-direction: column; justify-content: flex-end; padding: 120px var(--pad) clamp(48px, 7vw, 80px); isolation: isolate; }
+    .hero-bg { position: absolute; inset: 0; z-index: -1; background-image: url('assets/photos/pack-street.jpg'); background-size: cover; background-position: center 30%; }
+    .hero-bg::after { content: ''; position: absolute; inset: 0; background: linear-gradient(rgba(10,10,10,0.55) 0%, rgba(10,10,10,0.35) 35%, rgba(10,10,10,0.86) 72%, rgba(10,10,10,0.98) 100%); }
+    .hero-inner { max-width: 1180px; margin: 0 auto; width: 100%; }
+    .hero .eyebrow { font-size: 13px; }
+    .hero h1 { font-family: var(--display); font-weight: 900; text-transform: uppercase; letter-spacing: -0.015em; line-height: 0.92; font-size: clamp(56px, 11.5vw, 148px); margin: 18px 0 14px; }
+    .hero h1 .volt { color: var(--volt); }
+    .hero-lead { font-size: clamp(16px, 2vw, 20px); color: var(--muted); max-width: 520px; line-height: 1.55; }
+    .cta-row { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 30px; }
+    .btn { display: inline-flex; align-items: center; gap: 10px; font-family: var(--display); font-weight: 800; letter-spacing: 0.05em; text-transform: uppercase; padding: 17px 30px; border-radius: 12px; text-decoration: none; font-size: 15px; transition: transform 0.15s ease, box-shadow 0.2s ease, border-color 0.2s ease, color 0.2s ease; }
     .btn:active { transform: scale(0.97); }
-    .btn-primary { background: var(--primary); color: var(--bg); box-shadow: 0 0 20px rgba(191,255,0,0.25); }
-    .btn-primary:hover { box-shadow: 0 0 40px rgba(191,255,0,0.5); }
-    .btn-secondary { background: transparent; color: var(--text); border: 2px solid rgba(255,255,255,0.2); }
-    .btn-secondary:hover { border-color: var(--primary); color: var(--primary); }
-    .ref-note { margin-top: 28px; padding: 16px 20px; background: rgba(191,255,0,0.06); border: 1px solid rgba(191,255,0,0.2); border-radius: 12px; max-width: 440px; font-size: 14px; color: var(--text); text-align: left; display: none; }
-    .ref-note strong { color: var(--primary); }
-    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; max-width: 960px; margin: 80px auto; padding: 0 24px; }
-    .card { background: var(--surface); border: 1px solid rgba(255,255,255,0.06); border-radius: 16px; padding: 28px; }
-    .card h3 { font-family: var(--display); font-weight: 900; text-transform: uppercase; font-size: 20px; margin-bottom: 8px; letter-spacing: -0.01em; }
-    .card p { color: var(--muted); font-size: 15px; line-height: 1.5; }
-    .card .emoji { font-size: 32px; display: block; margin-bottom: 12px; }
-    .run-list { max-width: 720px; margin: 40px auto 80px; padding: 0 24px; }
-    .run-list h2 { font-family: var(--display); font-weight: 900; text-transform: uppercase; font-size: clamp(28px, 4vw, 42px); text-align: center; margin-bottom: 28px; letter-spacing: -0.01em; }
-    .run-row { display: flex; align-items: center; justify-content: space-between; padding: 18px 0; border-bottom: 1px solid rgba(255,255,255,0.06); gap: 16px; }
-    .run-row:last-child { border-bottom: none; }
-    .run-day { font-family: var(--display); font-weight: 800; font-size: 20px; color: var(--text); text-transform: uppercase; letter-spacing: 0.02em; min-width: 100px; }
-    .run-location { flex: 1; color: var(--muted); font-size: 14px; }
-    .run-time { color: var(--primary); font-weight: 700; font-size: 14px; }
-    footer { text-align: center; padding: 60px 24px; border-top: 1px solid rgba(255,255,255,0.06); color: var(--muted-2); font-size: 13px; }
-    footer a { color: var(--muted); text-decoration: none; margin: 0 12px; }
-    footer a:hover { color: var(--primary); }
-    .callback-screen { position: fixed; inset: 0; background: var(--bg); z-index: 9999; display: none; flex-direction: column; align-items: center; justify-content: center; padding: 24px; text-align: center; }
-    .callback-screen.active { display: flex; }
-    .spinner { width: 48px; height: 48px; border: 3px solid rgba(191,255,0,0.2); border-top-color: var(--primary); border-radius: 50%; animation: spin 1s linear infinite; margin-bottom: 24px; }
-    @keyframes spin { to { transform: rotate(360deg); } }
-    .callback-screen h2 { font-family: var(--display); font-weight: 900; font-size: 32px; text-transform: uppercase; margin-bottom: 12px; }
-    .callback-screen p { color: var(--muted); margin-bottom: 24px; max-width: 360px; }
+    .btn-volt { background: var(--volt); color: var(--ink); box-shadow: 0 0 22px rgba(191,255,0,0.28); }
+    .btn-volt:hover { box-shadow: 0 0 44px rgba(191,255,0,0.5); }
+    .btn-ghost { background: rgba(10,10,10,0.4); color: var(--text); border: 2px solid rgba(255,255,255,0.25); }
+    .btn-ghost:hover { border-color: var(--volt); color: var(--volt); }
+    .hero-rating { display: flex; align-items: center; gap: 8px; margin-top: 26px; font-size: 13px; color: var(--muted); }
+    .hero-rating .stars { color: var(--volt); letter-spacing: 2px; }
+
+    /* Signature: live next-run countdown (tappable — jumps to the schedule) */
+    .next-run-chip { display: inline-flex; flex-direction: column; gap: 10px; background: rgba(20,20,20,0.82); border: 1px solid rgba(191,255,0,0.3); border-radius: 16px; padding: 16px 20px; margin-top: 34px; backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); text-decoration: none; transition: border-color 0.2s ease, box-shadow 0.2s ease; }
+    .next-run-chip:hover { border-color: rgba(191,255,0,0.6); box-shadow: 0 0 28px rgba(191,255,0,0.15); }
+    .next-run-chip .label { display: flex; align-items: center; gap: 8px; font-size: 11px; font-weight: 700; letter-spacing: 0.22em; text-transform: uppercase; color: var(--muted); }
+    .next-run-chip .label .dot { width: 7px; height: 7px; border-radius: 50%; background: var(--volt); animation: pulse 2s ease-in-out infinite; }
+    .next-run-chip .run-name { font-family: var(--display); font-weight: 900; text-transform: uppercase; font-size: clamp(19px, 2.6vw, 26px); letter-spacing: 0.01em; }
+    .next-run-chip .run-name em { font-style: normal; color: var(--volt); }
+    .countdown { display: flex; gap: 18px; }
+    .cd-unit { text-align: left; }
+    .cd-value { font-family: var(--display); font-weight: 900; font-size: clamp(30px, 4.5vw, 44px); line-height: 1; color: var(--volt); font-variant-numeric: tabular-nums; }
+    .cd-label { font-size: 10px; letter-spacing: 0.18em; text-transform: uppercase; color: rgba(255,255,255,0.58); margin-top: 4px; }
+    .cd-live { font-family: var(--display); font-weight: 900; font-size: clamp(26px, 4vw, 38px); color: var(--volt); text-transform: uppercase; }
+    .cd-live .spark { color: var(--spark); }
+    @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.35; } }
+
+    /* ===== Runs schedule ===== */
+    .runs-list { margin-top: clamp(28px, 4vw, 48px); border-top: 1px solid var(--line); }
+    .run-row { display: grid; grid-template-columns: minmax(84px, 150px) 1fr auto; gap: clamp(14px, 3vw, 40px); align-items: center; padding: clamp(20px, 3.4vw, 34px) 0; border-bottom: 1px solid var(--line); position: relative; transition: background 0.25s ease; }
+    .run-row:hover { background: rgba(255,255,255,0.02); }
+    .run-day { font-family: var(--display); font-weight: 900; font-size: clamp(44px, 7.5vw, 92px); line-height: 0.9; text-transform: uppercase; color: transparent; -webkit-text-stroke: 1.5px rgba(255,255,255,0.35); letter-spacing: 0.01em; }
+    .run-row.next .run-day { color: var(--volt); -webkit-text-stroke: 0; }
+    .run-info h3 { font-family: var(--display); font-weight: 800; text-transform: uppercase; font-size: clamp(19px, 2.6vw, 27px); letter-spacing: 0.01em; }
+    .run-info .meta { color: var(--muted); font-size: clamp(13px, 1.5vw, 15px); margin-top: 5px; }
+    .run-info .addr { color: var(--muted); font-size: clamp(12px, 1.4vw, 14px); margin-top: 3px; }
+    .run-side { display: flex; flex-direction: column; align-items: flex-end; gap: 10px; }
+    .next-flag { font-size: 10px; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase; color: var(--ink); background: var(--volt); padding: 5px 10px; border-radius: 999px; display: none; }
+    .run-row.next .next-flag { display: inline-block; }
+    .next-flag.live { background: var(--spark); color: #fff; }
+    .directions { display: inline-flex; align-items: center; gap: 7px; min-height: 44px; padding: 10px 18px; font-size: 13px; font-weight: 600; color: var(--text); text-decoration: none; border: 1px solid rgba(255,255,255,0.25); border-radius: 999px; transition: color 0.2s ease, border-color 0.2s ease; }
+    .directions:hover { color: var(--volt); border-color: var(--volt); }
+    .directions svg { width: 13px; height: 13px; flex: none; }
+
+    /* ===== Pace groups ===== */
+    .pace-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 14px; margin-top: clamp(28px, 4vw, 48px); }
+    .pace-card { background: var(--asphalt); border: 1px solid var(--line); border-radius: 16px; padding: 26px 24px; transition: border-color 0.25s ease, transform 0.25s ease; }
+    .pace-card:hover { border-color: rgba(191,255,0,0.45); transform: translateY(-3px); }
+    .pace-card .pace-tag { font-family: var(--display); font-weight: 900; font-size: 15px; text-transform: uppercase; letter-spacing: 0.08em; color: var(--volt); }
+    .pace-card h3 { font-family: var(--display); font-weight: 900; text-transform: uppercase; font-size: 26px; margin: 8px 0 6px; }
+    .pace-card p { color: var(--muted); font-size: 14px; line-height: 1.5; }
+
+    /* ===== App section ===== */
+    .app-section { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(32px, 6vw, 80px); align-items: center; }
+    .phone { width: min(300px, 78vw); margin: 0 auto; border-radius: 44px; border: 3px solid #2A2A2A; background: #000; padding: 10px; box-shadow: 0 30px 80px rgba(0,0,0,0.6), 0 0 60px rgba(191,255,0,0.07); }
+    .phone img { border-radius: 34px; }
+    .feature-list { list-style: none; display: flex; flex-direction: column; margin-top: clamp(24px, 3vw, 40px); border-top: 1px solid var(--line); }
+    .feature-list li { display: grid; grid-template-columns: minmax(112px, 148px) 1fr; gap: 16px; align-items: baseline; padding: 16px 0; border-bottom: 1px solid var(--line); }
+    .feature-list .f-name { font-family: var(--display); font-weight: 800; text-transform: uppercase; font-size: 17px; letter-spacing: 0.02em; }
+    .feature-list .f-desc { color: var(--muted); font-size: 14px; line-height: 1.5; }
+    .app-ctas { margin-top: 28px; display: flex; gap: 16px; flex-wrap: wrap; align-items: center; }
+
+    /* ===== Badge marquee ===== */
+    .badges-section { padding: clamp(56px, 8vw, 100px) 0; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); overflow: hidden; }
+    .badges-head { max-width: 1180px; margin: 0 auto 34px; padding: 0 var(--pad); }
+    .marquee { display: flex; width: max-content; animation: drift 36s linear infinite; }
+    .marquee:hover { animation-play-state: paused; }
+    .badge-chip { flex: none; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 6px; width: 150px; height: 150px; margin-right: 16px; background: var(--asphalt); border: 1px solid var(--line); border-radius: 20px; }
+    .badge-chip .b-mark { font-family: var(--display); font-weight: 900; font-size: 40px; line-height: 1; color: var(--volt); letter-spacing: -0.01em; }
+    .badge-chip .b-mark sub { font-size: 15px; vertical-align: baseline; color: var(--muted); margin-left: 3px; }
+    .badge-chip .b-name { font-size: 10px; letter-spacing: 0.18em; text-transform: uppercase; color: rgba(255,255,255,0.55); }
+    .badge-chip.legendary { border-color: rgba(255,215,0,0.35); }
+    .badge-chip.legendary .b-mark { background: linear-gradient(180deg, #FFE55C, #FFD700 40%, #BFFF00); -webkit-background-clip: text; background-clip: text; color: transparent; }
+    @keyframes drift { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+
+    /* ===== Community ===== */
+    .photo-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-top: clamp(28px, 4vw, 48px); }
+    .photo-grid img { border-radius: 16px; aspect-ratio: 4/5; object-fit: cover; width: 100%; }
+    .photo-grid img:nth-child(2) { margin-top: 28px; }
+    .review-quote { margin-top: 32px; max-width: 560px; padding: 24px 26px; background: var(--asphalt); border: 1px solid var(--line); border-left: 3px solid var(--volt); border-radius: 14px; }
+    .review-quote .stars { color: var(--volt); letter-spacing: 2px; font-size: 13px; }
+    .review-quote p { margin-top: 10px; font-size: 16px; line-height: 1.55; }
+    .review-quote cite { display: block; margin-top: 10px; font-style: normal; font-size: 12px; color: var(--muted-2); letter-spacing: 0.08em; text-transform: uppercase; }
+    .community-line { margin-top: 26px; color: var(--muted); font-size: 15px; }
+    .community-line a { color: var(--volt); text-decoration: none; font-weight: 600; }
+    .community-line a:hover { text-decoration: underline; }
+
+    /* ===== FAQ ===== */
+    .faq-list { margin-top: clamp(24px, 3vw, 40px); border-top: 1px solid var(--line); max-width: 760px; }
+    details { border-bottom: 1px solid var(--line); }
+    summary { cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center; gap: 16px; padding: 20px 0; font-family: var(--display); font-weight: 800; text-transform: uppercase; font-size: clamp(16px, 2vw, 20px); letter-spacing: 0.02em; }
+    summary::-webkit-details-marker { display: none; }
+    summary::after { content: '+'; font-family: var(--display); font-weight: 700; color: var(--volt); font-size: 24px; transition: transform 0.25s ease; flex: none; }
+    details[open] summary::after { transform: rotate(45deg); }
+    details p { color: var(--muted); font-size: 15px; line-height: 1.6; padding: 0 0 20px; max-width: 640px; }
+
+    /* ===== Final CTA + footer ===== */
+    .final-cta { position: relative; text-align: center; padding: clamp(90px, 13vw, 180px) var(--pad); isolation: isolate; }
+    .final-bg { position: absolute; inset: 0; z-index: -1; background-image: url('assets/photos/hero.jpg'); background-size: cover; background-position: center; }
+    .final-bg::after { content: ''; position: absolute; inset: 0; background: rgba(10,10,10,0.82); }
+    .final-cta h2 { font-family: var(--display); font-weight: 900; text-transform: uppercase; font-size: clamp(48px, 9vw, 110px); line-height: 0.92; letter-spacing: -0.01em; }
+    .final-cta h2 .volt { color: var(--volt); }
+    .final-cta p { color: var(--muted); margin: 16px auto 0; max-width: 460px; font-size: 16px; line-height: 1.55; }
+    footer { border-top: 1px solid var(--line); padding: 40px var(--pad) calc(40px + env(safe-area-inset-bottom)); }
+    .footer-inner { max-width: 1180px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 24px; align-items: center; justify-content: space-between; }
+    .footer-links { display: flex; gap: 22px; flex-wrap: wrap; }
+    .footer-links a { color: var(--muted); font-size: 13px; text-decoration: none; padding: 8px 0; }
+    .footer-links a:hover { color: var(--volt); }
+    .footer-copy { color: var(--muted-2); font-size: 12px; }
+
+    /* ===== Reveal on scroll ===== */
+    .reveal { opacity: 0; transform: translateY(22px); transition: opacity 0.7s ease, transform 0.7s ease; }
+    .reveal.in { opacity: 1; transform: none; }
+    .hero .reveal { transition-duration: 0.9s; }
+
+    @media (max-width: 720px) {
+      .app-section { grid-template-columns: 1fr; }
+      .run-row { grid-template-columns: minmax(64px, 92px) 1fr; }
+      .run-day { -webkit-text-stroke: 2px rgba(255,255,255,0.5); }
+      .run-row.next .run-day { -webkit-text-stroke: 0; }
+      .run-side { grid-column: 2; flex-direction: row; align-items: center; justify-content: flex-start; }
+      .feature-list li { grid-template-columns: 1fr; gap: 4px; }
+      .photo-grid { grid-template-columns: 1fr 1fr; }
+      .photo-grid img:nth-child(3) { display: none; }
+      .countdown { gap: 14px; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      .marquee { animation: none; flex-wrap: wrap; width: auto; justify-content: center; }
+      .next-run-chip .label .dot { animation: none; }
+      .reveal { opacity: 1; transform: none; transition: none; }
+    }
   </style>
+  <noscript><style>.reveal { opacity: 1 !important; transform: none !important; }</style></noscript>
 </head>
 <body>
 
-  <!-- Auth callback overlay: shown when URL has code/token params -->
-  <div id="callback" class="callback-screen">
-    <div class="spinner"></div>
-    <h2 id="cb-title">Opening Run It UP!</h2>
-    <p id="cb-text">Hang on — taking you into the app.</p>
-    <a id="cb-manual" class="btn btn-primary" style="display:none;" href="#">Open the App</a>
+  <header id="site-header">
+    <a class="brand" href="#top" aria-label="Run It UP! Dallas — back to top">
+      <img src="assets/logo.png" alt="" width="38" height="38">
+      <span>Run It UP!</span>
+    </a>
+    <a class="header-cta" href="https://apps.apple.com/us/app/run-it-up-dallas/id6761876137" target="_blank" rel="noopener">Get the app</a>
+  </header>
+
+  <div class="invite-banner" id="invite-banner" role="status">
+    <strong>A crew member invited you.</strong> Pick your pace and pull up to the next run — <a href="https://apps.apple.com/us/app/run-it-up-dallas/id6761876137" target="_blank" rel="noopener">get the app</a>.
+    <button class="invite-close" id="invite-close" aria-label="Dismiss invitation message">×</button>
   </div>
 
-  <main class="hero">
-    <div class="logo-mark">RUN IT UP!</div>
-    <div class="tagline">Dallas · Social Run Club</div>
-
-    <span class="hero-badge">Built By the Community · Powered by Purpose</span>
-    <h1>Dallas's Biggest Run Club</h1>
-    <p class="hero-lead">Check in. Connect. Run together. All paces welcome — walkers, joggers, runners, sprinters. One crew.</p>
-
-    <div id="ref-note" class="ref-note"></div>
-
-    <div class="cta-row">
-      <a class="btn btn-primary" href="https://apps.apple.com/us/app/run-it-up-dallas/id6749632500">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.05 12.04c-.03-2.73 2.23-4.05 2.33-4.11-1.27-1.86-3.25-2.11-3.95-2.14-1.68-.17-3.28 1-4.14 1-.87 0-2.18-.97-3.58-.95-1.84.03-3.54 1.07-4.49 2.72-1.91 3.31-.49 8.22 1.38 10.91.91 1.32 2 2.81 3.4 2.76 1.37-.05 1.89-.89 3.55-.89 1.65 0 2.11.89 3.57.86 1.47-.02 2.4-1.34 3.31-2.67 1.04-1.53 1.47-3.01 1.49-3.09-.03-.01-2.85-1.1-2.88-4.35zm-2.73-8c.75-.91 1.26-2.18 1.12-3.44-1.08.04-2.4.72-3.18 1.62-.7.8-1.31 2.09-1.15 3.33 1.21.1 2.45-.61 3.21-1.51z"/></svg>
-        Download on App Store
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="top">
+    <div class="hero-bg" role="img" aria-label="The Run It UP! Dallas crew running down a Dallas street"></div>
+    <div class="hero-inner">
+      <p class="eyebrow reveal">Dallas · Social Run Club</p>
+      <h1 class="reveal">Built by the community,<br><span class="volt">powered by purpose.</span></h1>
+      <p class="hero-lead reveal">Four runs a week across Dallas. Every pace welcome — from a first-mile walk to a sub-8 sprint. No fees. Just community.</p>
+      <div class="cta-row reveal">
+        <a class="btn btn-volt" href="https://apps.apple.com/us/app/run-it-up-dallas/id6761876137" target="_blank" rel="noopener">
+          <svg class="apple-mark" viewBox="0 0 18 18" fill="currentColor" aria-hidden="true"><path d="M13.545 8.32c-.023-2.147 1.752-3.179 1.832-3.229-1-1.46-2.552-1.66-3.103-1.683-1.318-.134-2.578.778-3.248.778-.671 0-1.707-.759-2.808-.738C4.858 3.47 3.62 4.298 2.93 5.564c-1.397 2.424-.357 6.014.998 7.98.666.96 1.458 2.04 2.5 2.001 1.003-.04 1.382-.648 2.596-.648 1.213 0 1.553.648 2.611.627 1.082-.018 1.765-1.001 2.424-1.963.764-1.112 1.079-2.19 1.098-2.247-.024-.01-2.107-.809-2.131-3.207v.213zM11.525 2.507C12.07 1.846 12.44.954 12.34.05c-.765.031-1.691.51-2.24 1.152-.493.57-.924 1.48-.808 2.353.853.066 1.724-.434 2.233-1.048z"/></svg>
+          Download the app
+        </a>
+        <a class="btn btn-ghost" href="#runs">See the runs</a>
+      </div>
+      <a class="next-run-chip reveal" id="next-run-chip" href="#runs" aria-label="Jump to the weekly run schedule">
+        <span class="label"><span class="dot"></span> Next run</span>
+        <span class="run-name" id="nr-name">Four runs, every week</span>
+        <div class="countdown" id="nr-countdown" aria-live="off"></div>
       </a>
-      <a class="btn btn-secondary" href="https://instagram.com/runitup_dallas">Follow @runitup_dallas</a>
+      <div class="hero-rating reveal">
+        <span class="stars" aria-hidden="true">★★★★★</span>
+        <span>5.0 on the App Store</span>
+      </div>
     </div>
-  </main>
-
-  <section class="run-list">
-    <h2>Where We Run</h2>
-    <div class="run-row"><div class="run-day">Mon</div><div class="run-location">Trinity Groves · 3118 Gulden Ln</div><div class="run-time">7:00 PM</div></div>
-    <div class="run-row"><div class="run-day">Tue</div><div class="run-location">Deep Ellum · 2823 Main St</div><div class="run-time">7:00 PM</div></div>
-    <div class="run-row"><div class="run-day">Sat</div><div class="run-location">Fair Oaks Park · 7621 Fair Oaks Ave</div><div class="run-time">8:30 AM</div></div>
-    <div class="run-row"><div class="run-day">Sun</div><div class="run-location">Levy Event Plaza, Irving · 501 E Las Colinas Blvd</div><div class="run-time">8:30 AM</div></div>
   </section>
 
-  <section class="grid">
-    <div class="card"><span class="emoji">🏁</span><h3>Lock In Check-Ins</h3><p>Tap to check in before every run. Build your streak. Stack badges.</p></div>
-    <div class="card"><span class="emoji">🤝</span><h3>Find a Running Buddy</h3><p>Never run alone. Match with someone at your pace before you show up.</p></div>
-    <div class="card"><span class="emoji">💬</span><h3>12 Community Channels</h3><p>Connect with the crew. Real-time chat by pace group, by run night, by vibe.</p></div>
-    <div class="card"><span class="emoji">📍</span><h3>Live GPS Tracking</h3><p>Start a run, track your distance and pace, share your summary to your stories.</p></div>
+  <!-- ===== RUNS ===== -->
+  <section class="section" id="runs">
+    <p class="eyebrow reveal">The schedule</p>
+    <h2 class="section-title reveal">Where we run</h2>
+    <p class="section-sub reveal">Same four runs, every week. Show up to any of them — your first one counts.</p>
+    <div class="runs-list reveal">
+      <div class="run-row" data-day="MON">
+        <div class="run-day" aria-hidden="true">MON</div>
+        <div class="run-info">
+          <h3>Monday · Trinity Groves</h3>
+          <p class="meta">7:00 PM · 2 miles · every week</p>
+          <p class="addr">3118 Gulden Lane, Dallas</p>
+        </div>
+        <div class="run-side">
+          <span class="next-flag">Next up</span>
+          <a class="directions" href="https://maps.google.com/?q=3118+Gulden+Lane+Dallas+TX" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5z"/></svg>Directions</a>
+        </div>
+      </div>
+      <div class="run-row" data-day="TUE">
+        <div class="run-day" aria-hidden="true">TUE</div>
+        <div class="run-info">
+          <h3>Tuesday · Deep Ellum</h3>
+          <p class="meta">7:00 PM · 2 miles · every week</p>
+          <p class="addr">2823 Main St, Dallas</p>
+        </div>
+        <div class="run-side">
+          <span class="next-flag">Next up</span>
+          <a class="directions" href="https://maps.google.com/?q=2823+Main+St+Dallas+TX" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5z"/></svg>Directions</a>
+        </div>
+      </div>
+      <div class="run-row" data-day="SAT">
+        <div class="run-day" aria-hidden="true">SAT</div>
+        <div class="run-info">
+          <h3>Saturday · Fair Oaks Park</h3>
+          <p class="meta">8:30 AM · 3–5 miles · every week</p>
+          <p class="addr">7621 Fair Oaks Ave, Dallas</p>
+        </div>
+        <div class="run-side">
+          <span class="next-flag">Next up</span>
+          <a class="directions" href="https://maps.google.com/?q=7621+Fair+Oaks+Ave+Dallas+TX+75231" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5z"/></svg>Directions</a>
+        </div>
+      </div>
+      <div class="run-row" data-day="SUN">
+        <div class="run-day" aria-hidden="true">SUN</div>
+        <div class="run-info">
+          <h3>Sunday · Levy Event Plaza</h3>
+          <p class="meta">8:30 AM · 3 miles · every week</p>
+          <p class="addr">501 E Las Colinas Blvd, Irving</p>
+        </div>
+        <div class="run-side">
+          <span class="next-flag">Next up</span>
+          <a class="directions" href="https://maps.google.com/?q=501+E+Las+Colinas+Blvd+Irving+TX" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5z"/></svg>Directions</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PACE ===== -->
+  <section class="section" id="pace">
+    <p class="eyebrow reveal">No wrong answers</p>
+    <h2 class="section-title reveal">Every pace has a crew</h2>
+    <p class="section-sub reveal">You pick your pace group in the app, and you'll never run alone. Move up whenever you're ready.</p>
+    <div class="pace-grid reveal">
+      <div class="pace-card">
+        <span class="pace-tag">16+ min/mi</span>
+        <h3>Walk It Up</h3>
+        <p>Every step counts. Start where you are.</p>
+      </div>
+      <div class="pace-card">
+        <span class="pace-tag">12–16 min/mi</span>
+        <h3>Jog It Up</h3>
+        <p>Finding our rhythm, one run at a time.</p>
+      </div>
+      <div class="pace-card">
+        <span class="pace-tag">8–12 min/mi</span>
+        <h3>Run It Up</h3>
+        <p>Let's get it. The heartbeat of the club.</p>
+      </div>
+      <div class="pace-card">
+        <span class="pace-tag">Under 8 min/mi</span>
+        <h3>Sprint It Up</h3>
+        <p>Catch us if you can.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== APP ===== -->
+  <section class="section" id="app">
+    <div class="app-section">
+      <div class="reveal">
+        <p class="eyebrow">The crew app</p>
+        <h2 class="section-title">Check in.<br>Streak up.</h2>
+        <p class="section-sub">The Run It UP! app is how the crew keeps score — and keeps in touch.</p>
+        <ul class="feature-list">
+          <li><span class="f-name">Check-ins</span><span class="f-desc">Lock in at every run and build a week streak worth bragging about.</span></li>
+          <li><span class="f-name">Live roll call</span><span class="f-desc">See who's locked in for tonight's run before you leave the house.</span></li>
+          <li><span class="f-name">Run tracker</span><span class="f-desc">GPS distance, pace, and a shareable summary card when you're done.</span></li>
+          <li><span class="f-name">Run buddies</span><span class="f-desc">Match with someone at your pace so you never run alone.</span></li>
+          <li><span class="f-name">Crew chat</span><span class="f-desc">Twelve channels of routes, memes, and post-run pics.</span></li>
+          <li><span class="f-name">Badges</span><span class="f-desc">From your first mile to the 100-mile Century Club.</span></li>
+        </ul>
+        <div class="app-ctas">
+          <a class="btn btn-volt" href="https://apps.apple.com/us/app/run-it-up-dallas/id6761876137" target="_blank" rel="noopener">
+            <svg class="apple-mark" viewBox="0 0 18 18" fill="currentColor" aria-hidden="true"><path d="M13.545 8.32c-.023-2.147 1.752-3.179 1.832-3.229-1-1.46-2.552-1.66-3.103-1.683-1.318-.134-2.578.778-3.248.778-.671 0-1.707-.759-2.808-.738C4.858 3.47 3.62 4.298 2.93 5.564c-1.397 2.424-.357 6.014.998 7.98.666.96 1.458 2.04 2.5 2.001 1.003-.04 1.382-.648 2.596-.648 1.213 0 1.553.648 2.611.627 1.082-.018 1.765-1.001 2.424-1.963.764-1.112 1.079-2.19 1.098-2.247-.024-.01-2.107-.809-2.131-3.207v.213zM11.525 2.507C12.07 1.846 12.44.954 12.34.05c-.765.031-1.691.51-2.24 1.152-.493.57-.924 1.48-.808 2.353.853.066 1.724-.434 2.233-1.048z"/></svg>
+            App Store
+          </a>
+          <span class="hero-rating" style="margin-top:0;"><span class="stars" aria-hidden="true">★★★★★</span><span>5.0 · free</span></span>
+        </div>
+      </div>
+      <div class="phone reveal">
+        <img src="assets/app-splash.jpg" alt="The Run It UP! Dallas app on iPhone, showing the splash screen with Join the Crew button" loading="lazy" width="880" height="1913">
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== BADGES ===== -->
+  <section class="badges-section" aria-label="Badges you can earn in the app">
+    <div class="badges-head">
+      <p class="eyebrow reveal">Earned, never given</p>
+      <h2 class="section-title reveal" style="font-size: clamp(32px, 5vw, 56px);">The badge wall</h2>
+    </div>
+    <div class="marquee" id="badge-marquee">
+      <!-- duplicated set injected by JS for a seamless loop -->
+    </div>
+  </section>
+
+  <!-- ===== COMMUNITY ===== -->
+  <section class="section" id="community">
+    <p class="eyebrow reveal">More than miles</p>
+    <h2 class="section-title reveal">Pull up once,<br>you're family</h2>
+    <div class="photo-grid reveal">
+      <img src="assets/photos/above-crowd.jpg" alt="A large Run It UP! crowd gathered before a run" loading="lazy">
+      <img src="assets/photos/duo-women.jpg" alt="Two runners laughing mid-run" loading="lazy">
+      <img src="assets/photos/night-sprint.jpg" alt="A night run through Deep Ellum" loading="lazy">
+    </div>
+    <blockquote class="review-quote reveal">
+      <span class="stars" aria-hidden="true">★★★★★</span>
+      <p>"Great app if you're looking for local runs with a group. Functionality is user friendly."</p>
+      <cite>App Store review</cite>
+    </blockquote>
+    <p class="community-line reveal">The post-run pics live in the crew chat and on <a href="https://instagram.com/runitupdallas" target="_blank" rel="noopener">@runitupdallas</a>.</p>
+  </section>
+
+  <!-- ===== FAQ ===== -->
+  <section class="section" id="faq">
+    <p class="eyebrow reveal">Before you pull up</p>
+    <h2 class="section-title reveal">Good to know</h2>
+    <div class="faq-list reveal">
+      <details>
+        <summary>Does it cost anything?</summary>
+        <p>No. Run It UP! Dallas is free — no fees, no memberships. Show up, run, hang out.</p>
+      </details>
+      <details>
+        <summary>Do I need to be fast?</summary>
+        <p>Not even a little. There are four pace groups from a 16-minute-mile walk to a sub-8 sprint, and every group has a crew. Nobody gets left behind.</p>
+      </details>
+      <details>
+        <summary>What do I bring to my first run?</summary>
+        <p>Shoes, water, and the app if you want your first run to count toward your streak. Come a few minutes early and say you're new — the crew will take it from there.</p>
+      </details>
+      <details>
+        <summary>Do I need the app to run with the club?</summary>
+        <p>No — just pull up. The app is where check-ins, streaks, badges, run buddies, and the crew chat live, and you can explore it as a guest first.</p>
+      </details>
+      <details>
+        <summary>Is it Android-friendly?</summary>
+        <p>The app is on iPhone today. Android runners are still crew — the schedule on this page is always current.</p>
+      </details>
+    </div>
+  </section>
+
+  <!-- ===== FINAL CTA ===== -->
+  <section class="final-cta">
+    <div class="final-bg" aria-hidden="true"></div>
+    <p class="eyebrow reveal">Dallas · Every week</p>
+    <h2 class="reveal">You in?<br><span class="volt">Pull up.</span></h2>
+    <p class="reveal">Download the app, pick your pace group, and lock in your first check-in this week.</p>
+    <div class="cta-row reveal" style="justify-content: center;">
+      <a class="btn btn-volt" href="https://apps.apple.com/us/app/run-it-up-dallas/id6761876137" target="_blank" rel="noopener">
+        <svg class="apple-mark" viewBox="0 0 18 18" fill="currentColor" aria-hidden="true"><path d="M13.545 8.32c-.023-2.147 1.752-3.179 1.832-3.229-1-1.46-2.552-1.66-3.103-1.683-1.318-.134-2.578.778-3.248.778-.671 0-1.707-.759-2.808-.738C4.858 3.47 3.62 4.298 2.93 5.564c-1.397 2.424-.357 6.014.998 7.98.666.96 1.458 2.04 2.5 2.001 1.003-.04 1.382-.648 2.596-.648 1.213 0 1.553.648 2.611.627 1.082-.018 1.765-1.001 2.424-1.963.764-1.112 1.079-2.19 1.098-2.247-.024-.01-2.107-.809-2.131-3.207v.213zM11.525 2.507C12.07 1.846 12.44.954 12.34.05c-.765.031-1.691.51-2.24 1.152-.493.57-.924 1.48-.808 2.353.853.066 1.724-.434 2.233-1.048z"/></svg>
+        Download the app
+      </a>
+      <a class="btn btn-ghost" href="#runs">This week's runs</a>
+    </div>
   </section>
 
   <footer>
-    <div>&copy; 2026 Run It UP! Dallas · All runs, all paces, all community.</div>
-    <div style="margin-top: 12px;">
-      <a href="/privacy.html">Privacy</a>·
-      <a href="/terms.html">Terms</a>·
-      <a href="mailto:contactus@runitupdallas.com">Contact</a>
+    <div class="footer-inner">
+      <a class="brand" href="#top">
+        <img src="assets/logo.png" alt="" width="38" height="38">
+        <span>Run It UP!</span>
+      </a>
+      <nav class="footer-links" aria-label="Footer">
+        <a href="https://apps.apple.com/us/app/run-it-up-dallas/id6761876137" target="_blank" rel="noopener">App Store</a>
+        <a href="https://instagram.com/runitupdallas" target="_blank" rel="noopener">Instagram</a>
+        <a href="mailto:contactus@runitupdallas.com">Contact</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="terms.html">Terms</a>
+      </nav>
+      <p class="footer-copy">© 2026 Run It UP! Dallas · Social run club</p>
     </div>
   </footer>
 
   <script>
-    // ===== AUTH DEEP-LINK CALLBACK HANDLER =====
-    // Supabase email confirmation, password reset, magic link all redirect here.
-    // We preserve the hash/query and forward to the iOS deep link scheme.
-    (function() {
-      const hash = window.location.hash || '';
-      const search = window.location.search || '';
-      const path = window.location.pathname || '/';
+    // ===== Live schedule: countdown + NEXT flag (Chicago timezone, same logic as the app) =====
+    try {
+      const WEEKLY_RUNS = [
+        { day: 'MON', dayOfWeek: 1, location: 'Trinity Groves', time: '7:00 PM' },
+        { day: 'TUE', dayOfWeek: 2, location: 'Deep Ellum', time: '7:00 PM' },
+        { day: 'SAT', dayOfWeek: 6, location: 'Fair Oaks Park', time: '8:30 AM' },
+        { day: 'SUN', dayOfWeek: 0, location: 'Levy Event Plaza', time: '8:30 AM' }
+      ];
+      const DAY_FULL = { MON: 'Monday', TUE: 'Tuesday', SAT: 'Saturday', SUN: 'Sunday' };
+      const LIVE_AFTER_MS = 2 * 3600000; // a run counts as "happening" until 2h after start
 
-      const isAuthCallback = path.includes('/auth/callback') || hash.includes('access_token') || hash.includes('error_code') || search.includes('code=') || search.includes('token_hash=');
-
-      if (isAuthCallback) {
-        const cb = document.getElementById('callback');
-        cb.classList.add('active');
-
-        // Build deep link preserving params
-        const deepLink = 'com.runitupdallas.app://auth/callback' + search + hash;
-        const manual = document.getElementById('cb-manual');
-        manual.href = deepLink;
-
-        // Try automatic open
-        window.location.replace(deepLink);
-
-        // If we're still here in 2s, show manual button
-        setTimeout(() => {
-          document.getElementById('cb-title').textContent = 'Almost there';
-          document.getElementById('cb-text').textContent = 'If the app didn\'t open, tap below.';
-          manual.style.display = 'inline-flex';
-        }, 2000);
-        return;
+      function chicagoDateStr(d = new Date()) {
+        return new Intl.DateTimeFormat('en-CA', { timeZone: 'America/Chicago', year: 'numeric', month: '2-digit', day: '2-digit' }).format(d);
+      }
+      function chicagoWallClockToDate(dateStr, hour, minute = 0) {
+        const [y, m, d] = dateStr.split('-').map(Number);
+        let guess = new Date(Date.UTC(y, m - 1, d, hour, minute));
+        for (let i = 0; i < 2; i++) {
+          const parts = new Intl.DateTimeFormat('en-US', { timeZone: 'America/Chicago', year: 'numeric', month: '2-digit', day: '2-digit', hour: '2-digit', minute: '2-digit', hour12: false }).formatToParts(guess);
+          const get = t => parseInt(parts.find(p => p.type === t)?.value || '0', 10);
+          const shown = Date.UTC(get('year'), get('month') - 1, get('day'), get('hour') === 24 ? 0 : get('hour'), get('minute'));
+          guess = new Date(guess.getTime() + (Date.UTC(y, m - 1, d, hour, minute) - shown));
+        }
+        return guess;
+      }
+      function getNextRunDate(dayOfWeek) {
+        const isEvening = (dayOfWeek === 1 || dayOfWeek === 2);
+        const runHour = isEvening ? 19 : 8, runMinute = isEvening ? 0 : 30;
+        const now = new Date();
+        for (let i = 0; i < 8; i++) {
+          const dstr = chicagoDateStr(new Date(now.getTime() + i * 86400000));
+          if (new Date(dstr + 'T12:00:00Z').getUTCDay() !== dayOfWeek) continue;
+          const runDate = chicagoWallClockToDate(dstr, runHour, runMinute);
+          // Once today's run is over, point visitors at next week's
+          if (i === 0 && now.getTime() > runDate.getTime() + LIVE_AFTER_MS) continue;
+          return runDate;
+        }
+        return new Date(now.getTime() + 7 * 86400000);
       }
 
-      // ===== REFERRAL LINK HANDLING =====
-      const params = new URLSearchParams(search);
-      const ref = params.get('ref');
-      if (ref) {
-        // Store ref for attribution (read by app on first launch via pasteboard sharing)
-        try { localStorage.setItem('riu_ref', ref); } catch {}
-        // Show personalized banner
-        const note = document.getElementById('ref-note');
-        note.innerHTML = '<strong>A friend invited you.</strong> Download the app and you\'ll show up in their crew.';
-        note.style.display = 'block';
+      let nextRun = null;
+      function computeNext() {
+        return WEEKLY_RUNS.map(r => ({ ...r, date: getNextRunDate(r.dayOfWeek) })).sort((a, b) => a.date - b.date)[0];
       }
-    })();
+      function isLiveNow(run) {
+        const start = run.date.getTime();
+        return Date.now() >= start - 30 * 60000 && Date.now() <= start + LIVE_AFTER_MS;
+      }
+      const nrName = document.getElementById('nr-name');
+      const nrCd = document.getElementById('nr-countdown');
+      function applyNext() {
+        nextRun = computeNext();
+        nrName.innerHTML = `${DAY_FULL[nextRun.day]} · <em>${nextRun.location}</em> · ${nextRun.time}`;
+        const live = isLiveNow(nextRun);
+        document.querySelectorAll('.run-row').forEach(row => {
+          const isNext = row.dataset.day === nextRun.day;
+          row.classList.toggle('next', isNext);
+          const flag = row.querySelector('.next-flag');
+          if (flag) { flag.textContent = isNext && live ? 'Happening now' : 'Next up'; flag.classList.toggle('live', isNext && live); }
+        });
+      }
+      let lastCd = '';
+      function renderCd(html) { if (html !== lastCd) { nrCd.innerHTML = html; lastCd = html; } }
+      function tick() {
+        // Roll to the following run once this one's live window has passed
+        if (Date.now() > nextRun.date.getTime() + LIVE_AFTER_MS) applyNext();
+        if (isLiveNow(nextRun)) {
+          renderCd(`<span class="cd-live"><span class="spark">●</span> Happening now — pull up</span>`);
+          return;
+        }
+        const diff = nextRun.date - Date.now();
+        if (diff <= 0) { renderCd(`<span class="cd-live">Today</span>`); return; }
+        const d = Math.floor(diff / 86400000);
+        const h = Math.floor((diff % 86400000) / 3600000);
+        const m = Math.floor((diff % 3600000) / 60000);
+        const s = Math.floor((diff % 60000) / 1000);
+        const unit = (v, l) => `<div class="cd-unit"><div class="cd-value">${String(v).padStart(2, '0')}</div><div class="cd-label">${l}</div></div>`;
+        renderCd((d > 0 ? unit(d, d === 1 ? 'day' : 'days') : '') + unit(h, 'hrs') + unit(m, 'min') + unit(s, 'sec'));
+      }
+      applyNext();
+      tick();
+      setInterval(tick, 1000);
+    } catch (err) { console.error('[schedule]', err); }
+
+    // ===== Badge marquee (typographic lockups from the app) =====
+    try {
+      const BADGES = [
+        { mark: 'RIU', name: 'Welcome' },
+        { mark: '01<sub>MI</sub>', name: 'First Step' },
+        { mark: '5AM', name: 'Early Bird' },
+        { mark: '11<sub>PM</sub>', name: 'Night Runner' },
+        { mark: '7<sub>DAY</sub>', name: 'Streak Week' },
+        { mark: '12W', name: 'On Fire' },
+        { mark: '100<sub>MI</sub>', name: 'Century Club', legendary: true },
+        { mark: '+1', name: 'Run Buddy' },
+        { mark: 'OG', name: 'Day One', legendary: true },
+        { mark: '2X', name: 'Both Sides' },
+        { mark: '50<sub>DM</sub>', name: 'Social Butterfly' }
+      ];
+      const chip = b => `<div class="badge-chip${b.legendary ? ' legendary' : ''}"><span class="b-mark">${b.mark}</span><span class="b-name">${b.name}</span></div>`;
+      document.getElementById('badge-marquee').innerHTML = BADGES.map(chip).join('') + BADGES.map(chip).join('');
+    } catch (err) { console.error('[badges]', err); }
+
+    // ===== Invite link (?ref= from in-app share links) =====
+    try {
+      if (new URLSearchParams(location.search).get('ref')) {
+        const banner = document.getElementById('invite-banner');
+        banner.classList.add('show');
+        document.getElementById('invite-close').addEventListener('click', () => banner.remove());
+        setTimeout(() => banner.remove(), 12000); // never follows the reader down the page
+      }
+    } catch (err) { console.error('[invite]', err); }
+  </script>
+
+  <!-- Reveal wiring lives in its own script so a data-logic error can never hide the page -->
+  <script>
+    const header = document.getElementById('site-header');
+    addEventListener('scroll', () => header.classList.toggle('scrolled', scrollY > 10), { passive: true });
+    const io = new IntersectionObserver(entries => {
+      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+    }, { threshold: 0.12 });
+    document.querySelectorAll('.reveal').forEach((el, i) => {
+      el.style.transitionDelay = `${Math.min(i % 6, 4) * 60}ms`;
+      io.observe(el);
+    });
+    // Safety net: never leave content hidden if the observer doesn't fire
+    setTimeout(() => document.querySelectorAll('.reveal:not(.in)').forEach(el => el.classList.add('in')), 1800);
   </script>
 </body>
 </html>
