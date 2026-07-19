@@ -161,9 +161,12 @@ async function refreshHome() {
   container.innerHTML = `
     <!-- Hero Banner -->
     <div class="home-hero" style="background-image: url('./assets/photos/crew-hero.jpg');">
+      <div class="next-run-ticker" aria-label="Next run: ${nextRun.label} at ${nextRun.location}, ${nextRun.time}">
+        <div class="next-run-ticker-track">
+          ${`<span class="next-run-ticker-item">NEXT RUN&ensp;\u2022&ensp;${nextRun.label} \u2014 ${nextRun.location}&ensp;\u2022&ensp;${nextRun.time}&ensp;\u2022&ensp;</span>`.repeat(4)}
+        </div>
+      </div>
       <div class="home-hero-overlay">
-        <div class="next-run-label">Next Run</div>
-        <div class="next-run-title">${nextRun.label} \u2014 <span>${nextRun.location}</span></div>
         <div class="countdown" id="home-countdown"></div>
         ${windowOpen ? `
           <div class="next-run-meta">${nextRun.time} \u00B7 ${nextRun.distance}</div>
