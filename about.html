@@ -6,20 +6,20 @@
   <title>Run It UP! Dallas — Social Run Club · Four Runs a Week, Every Pace Welcome</title>
   <meta name="description" content="Run It UP! Dallas is a free social run club. Monday at Trinity Groves, Tuesday in Deep Ellum, Saturday at Fair Oaks Park, Sunday at Levy Event Plaza. Every pace welcome — pick a run and pull up. No fees, no signup, just community.">
   <meta name="theme-color" content="#0A0A0A">
-  <link rel="canonical" href="https://taylormadecreative.github.io/runitup-app-site/">
+  <link rel="canonical" href="https://taylormadecreative.github.io/runitup-app-site/about.html">
   <meta property="og:title" content="Run It UP! Dallas — Social Run Club">
   <meta property="og:description" content="Four runs a week across Dallas. Every pace welcome. No fees — just community. Pull up.">
   <meta property="og:image" content="https://taylormadecreative.github.io/runitup-app-site/assets/og-image.jpg">
-  <meta property="og:url" content="https://taylormadecreative.github.io/runitup-app-site/">
+  <meta property="og:url" content="https://taylormadecreative.github.io/runitup-app-site/about.html">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Run It UP! Dallas">
   <meta name="twitter:card" content="summary_large_image">
   <link rel="icon" href="assets/logo.png">
   <link rel="apple-touch-icon" href="assets/logo.png">
-  <link rel="preload" as="image" href="assets/photos/pack-street.jpg" fetchpriority="high">
+  <link rel="preload" as="image" href="assets/photos/pack-street.webp" fetchpriority="high">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" crossorigin="anonymous">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -79,8 +79,7 @@
         "operatingSystem": "iOS",
         "applicationCategory": "HealthApplication",
         "url": "https://apps.apple.com/us/app/run-it-up-dallas/id6761876137",
-        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
-        "aggregateRating": { "@type": "AggregateRating", "ratingValue": "5.0", "ratingCount": "1" }
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
       },
       {
         "@type": "FAQPage",
@@ -120,7 +119,7 @@
 
     .eyebrow { font-size: 12px; font-weight: 600; letter-spacing: 0.28em; text-transform: uppercase; color: var(--volt); }
     .section { padding: clamp(72px, 10vw, 140px) var(--pad); max-width: 1180px; margin: 0 auto; }
-    .section-title { font-family: var(--display); font-weight: 900; text-transform: uppercase; font-size: clamp(40px, 7vw, 84px); line-height: 0.95; letter-spacing: -0.01em; margin: 14px 0 10px; }
+    .section-title { font-family: var(--display); font-weight: 900; text-transform: uppercase; font-size: clamp(40px, min(7vw, 12vh), 84px); line-height: 0.95; letter-spacing: -0.01em; margin: 14px 0 10px; }
     .section-sub { color: var(--muted); font-size: clamp(15px, 1.6vw, 18px); line-height: 1.6; max-width: 560px; }
     .apple-mark { width: 15px; height: 15px; flex: none; }
 
@@ -151,12 +150,12 @@
     .invite-banner a { color: var(--volt); font-weight: 600; }
 
     /* ===== Hero ===== */
-    .hero { position: relative; min-height: 100svh; display: flex; flex-direction: column; justify-content: flex-end; padding: 120px var(--pad) clamp(48px, 7vw, 80px); isolation: isolate; }
-    .hero-bg { position: absolute; inset: 0; z-index: -1; background-image: url('assets/photos/pack-street.jpg'); background-size: cover; background-position: center 30%; }
+    .hero { position: relative; min-height: 100svh; display: flex; flex-direction: column; justify-content: flex-end; padding: min(120px, 14vh) var(--pad) clamp(32px, 7vh, 80px); isolation: isolate; }
+    .hero-bg { position: absolute; inset: 0; z-index: -1; background-image: url('assets/photos/pack-street.webp'); background-size: cover; background-position: center 30%; }
     .hero-bg::after { content: ''; position: absolute; inset: 0; background: linear-gradient(rgba(10,10,10,0.55) 0%, rgba(10,10,10,0.35) 35%, rgba(10,10,10,0.86) 72%, rgba(10,10,10,0.98) 100%); }
     .hero-inner { max-width: 1180px; margin: 0 auto; width: 100%; }
     .hero .eyebrow { font-size: 13px; }
-    .hero h1 { font-family: var(--display); font-weight: 900; text-transform: uppercase; letter-spacing: -0.015em; line-height: 0.92; font-size: clamp(56px, 11.5vw, 148px); margin: 18px 0 14px; }
+    .hero h1 { font-family: var(--display); font-weight: 900; text-transform: uppercase; letter-spacing: -0.015em; line-height: 0.92; font-size: clamp(48px, min(11.5vw, 16.5vh), 148px); margin: 18px 0 14px; }
     .hero h1 .volt { color: var(--volt); }
     .hero-lead { font-size: clamp(16px, 2vw, 20px); color: var(--muted); max-width: 520px; line-height: 1.55; }
     .cta-row { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 30px; }
@@ -260,9 +259,18 @@
     details[open] summary::after { transform: rotate(45deg); }
     details p { color: var(--muted); font-size: 15px; line-height: 1.6; padding: 0 0 20px; max-width: 640px; }
 
+    /* ===== Partners ===== */
+    .partner-stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 16px; margin: 34px 0 8px; max-width: 760px; }
+    .partner-stat { border: 1px solid var(--line); border-radius: 16px; padding: 22px 20px; background: rgba(255,255,255,0.02); }
+    .partner-stat .num { font-family: var(--display); font-weight: 900; font-size: clamp(34px, 4.5vw, 52px); line-height: 1; color: var(--volt); }
+    .partner-stat .lbl { margin-top: 8px; font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); }
+    .partner-list { margin: 26px 0 4px; padding: 0; list-style: none; max-width: 640px; display: grid; gap: 12px; }
+    .partner-list li { display: flex; gap: 12px; align-items: baseline; color: var(--muted); font-size: 15px; line-height: 1.55; }
+    .partner-list li::before { content: '→'; color: var(--volt); font-weight: 700; flex: none; }
+
     /* ===== Final CTA + footer ===== */
     .final-cta { position: relative; text-align: center; padding: clamp(90px, 13vw, 180px) var(--pad); isolation: isolate; }
-    .final-bg { position: absolute; inset: 0; z-index: -1; background-image: url('assets/photos/hero.jpg'); background-size: cover; background-position: center; }
+    .final-bg { position: absolute; inset: 0; z-index: -1; background-image: url('assets/photos/hero.webp'); background-size: cover; background-position: center; }
     .final-bg::after { content: ''; position: absolute; inset: 0; background: rgba(10,10,10,0.82); }
     .final-cta h2 { font-family: var(--display); font-weight: 900; text-transform: uppercase; font-size: clamp(48px, 9vw, 110px); line-height: 0.92; letter-spacing: -0.01em; }
     .final-cta h2 .volt { color: var(--volt); }
@@ -331,7 +339,7 @@
         <div class="countdown" id="nr-countdown" aria-live="off"></div>
       </a>
       <div class="hero-rating reveal">
-        <span>Free forever · every pace welcome · Dallas &amp; Irving</span>
+        <span><strong style="color: var(--volt); font-weight: 700;">90K followers on Instagram</strong> · Free forever · every pace welcome · Dallas &amp; Irving</span>
       </div>
     </div>
   </section>
@@ -456,9 +464,9 @@
     <h2 class="section-title reveal">Pull up once,<br>you're family</h2>
     <p class="section-sub reveal">The run is the excuse. The people are the reason. Come see for yourself on <a href="https://instagram.com/runitupdallas" target="_blank" rel="noopener" style="color: var(--volt); text-decoration: none;">@runitupdallas</a>.</p>
     <div class="photo-grid reveal">
-      <img src="assets/photos/above-crowd.jpg" alt="A large Run It UP! crowd gathered before a run" loading="lazy">
-      <img src="assets/photos/duo-women.jpg" alt="Two runners laughing mid-run" loading="lazy">
-      <img src="assets/photos/night-sprint.jpg" alt="A night run through Deep Ellum" loading="lazy">
+      <img src="assets/photos/above-crowd.webp" alt="A large Run It UP! crowd gathered before a run" width="1080" height="1080" loading="lazy">
+      <img src="assets/photos/duo-women.webp" alt="Two runners laughing mid-run" width="1080" height="1080" loading="lazy">
+      <img src="assets/photos/night-sprint.webp" alt="A night run through Deep Ellum" width="1080" height="1080" loading="lazy">
     </div>
   </section>
 
@@ -474,7 +482,7 @@
           <li><span class="f-name">Live roll call</span><span class="f-desc">See who's locked in for tonight's run before you leave the house.</span></li>
           <li><span class="f-name">Run tracker</span><span class="f-desc">GPS distance, pace, and a shareable summary card when you're done.</span></li>
           <li><span class="f-name">Run buddies</span><span class="f-desc">Match with someone at your pace so you never run alone.</span></li>
-          <li><span class="f-name">Crew chat</span><span class="f-desc">Twelve channels of routes, memes, and post-run pics.</span></li>
+          <li><span class="f-name">Crew chat</span><span class="f-desc">Channels of routes, memes, and post-run pics.</span></li>
           <li><span class="f-name">Badges</span><span class="f-desc">From your first mile to the 100-mile Century Club.</span></li>
         </ul>
         <div class="app-ctas">
@@ -531,6 +539,26 @@
   </section>
 
   <!-- ===== FINAL CTA ===== -->
+  <!-- ===== PARTNERS ===== -->
+  <section class="section" id="partners">
+    <p class="eyebrow reveal">Sponsors &amp; partners</p>
+    <h2 class="section-title reveal">Partner<br>with the crew</h2>
+    <p class="section-sub reveal">Every week, Run It UP! brings Dallas together to move — and the brands that show up with us become part of that story. If your brand belongs on the run, let's talk.</p>
+    <div class="partner-stats reveal">
+      <div class="partner-stat"><div class="num">90K</div><div class="lbl">Followers on Instagram</div></div>
+      <div class="partner-stat"><div class="num">4</div><div class="lbl">Runs every week</div></div>
+      <div class="partner-stat"><div class="num">2</div><div class="lbl">Cities — Dallas &amp; Irving</div></div>
+    </div>
+    <ul class="partner-list reveal">
+      <li>On-the-ground presence at four weekly runs across Dallas &amp; Irving</li>
+      <li>Custom challenges, badge drops, and check-in perks we can build into the crew app</li>
+      <li>Reach a 90K-follower Instagram community that shows up in real life</li>
+    </ul>
+    <div class="cta-row reveal">
+      <a class="btn btn-volt" href="mailto:contactus@runitupdallas.com?subject=Sponsorship%20%2F%20Partnership">Start the conversation</a>
+    </div>
+  </section>
+
   <section class="final-cta">
     <div class="final-bg" aria-hidden="true"></div>
     <p class="eyebrow reveal">Dallas · Every week</p>
@@ -549,9 +577,11 @@
         <span>Run It UP!</span>
       </a>
       <nav class="footer-links" aria-label="Footer">
+        <a href="./">Web app</a>
         <a href="https://apps.apple.com/us/app/run-it-up-dallas/id6761876137" target="_blank" rel="noopener">App Store</a>
         <a href="https://instagram.com/runitupdallas" target="_blank" rel="noopener">Instagram</a>
         <a href="mailto:contactus@runitupdallas.com">Contact</a>
+        <a href="mailto:contactus@runitupdallas.com?subject=Sponsorship%20%2F%20Partnership">Sponsorships</a>
         <a href="privacy.html">Privacy</a>
         <a href="terms.html">Terms</a>
       </nav>
